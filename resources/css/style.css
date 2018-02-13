@@ -1,0 +1,328 @@
+/******************************************
+            DEFAULT VALUES:
+
+
+            FONT FAMILY             : Roboto Condensed
+
+            COLOR PICK UP:
+
+            Baby Blue               : #3DFAFF       (buttons, Icons, Links, Lines, Backgrounds)
+            Nero                    : #2A2727       (Headings)
+            Mid Grey                : #646b70       (Paragraphs)
+            Black Pearl             : #0d0f14       (TExt With Black Backgrounds)
+            Snow                    : #FFFEFE
+
+******************************************/
+
+/* General css */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+  color: #646b70;
+  font-size: 0.8em;
+}
+
+h3 {
+  color: #2A2727;
+  text-transform: uppercase;
+}
+
+/******************************************
+                HOME
+******************************************/
+
+#home {
+  height: 100%;
+}
+
+#home-cover {
+  height: 100%;
+  background-image: url("../img/bg.jpg");
+  -webkit-animation: slide 30s linear infinite 0s;
+}
+
+@-webkit-keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0, 0;
+  }
+}
+
+#home-content-box {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+#home-content-box-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#home-heading h3 {
+  color: #FFF;
+  font-size: 3em;
+  font-weight: 700;
+  margin: 20px auto;
+}
+
+#home #shadow {
+  position: absolute;
+  width: 100%;
+  height: 85px;
+  bottom: 0;
+  left: 0;
+  margin-bottom: -1px;
+  background: url('../img/shadow.png') repeat-x;
+}
+
+/******************************************
+                PARALLAX (Generic)
+******************************************/
+
+.bg-parallax {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/******************************************
+                BUTTONS (Generic)
+******************************************/
+
+.btn-general {
+  border-color: #FFFEFE;
+  border-radius: 2px;
+  padding: 12px 26px;
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+
+.btn-white {
+  border-color: #FFFEFE;
+  color: #FFFEFE;
+}
+
+.btn-white:hover, .btn-white:focus {
+  background-color: #FFFEFE;
+  color: #3DFAFF;
+}
+
+.btn-blue {
+  border-color: #3DFAFF;
+  color: #3DFAFF;
+}
+
+.btn-blue:hover, .btn-blue:focus {
+  background-color: #3DFAFF;
+  color: #FFFEFE;
+}
+
+/******************************************
+                ANIMATE
+******************************************/
+
+#home-heading, #home-btn {
+  animation-duration: .5s;
+}
+
+#home-cover {
+  animation-delay: .3s;
+}
+
+#home-heading {
+  animation-delay: .5s;
+}
+
+#home-btn {
+  animation-delay: 1s;
+}
+
+/******************************************
+                CONTENT (Generic)
+******************************************/
+
+.content-box {
+  padding: 60px 0;
+}
+
+.content-title h3 {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-align: center;
+  margin: 25px auto;
+}
+
+.content-title-underline {
+  width: 100px;
+  height: 3px;
+  background-color: #3DFAFF;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+/******************************************
+                SERVICES
+******************************************/
+
+/* change the "BGC" it when its done !! important*/
+
+/* #services{
+  background-color: #fff9f9;
+} */
+
+.service-item {
+  padding: 20px 0;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.service-item-icon i {
+  color: #3DFAFF;
+  float: left;
+  padding: 15px;
+  margin-right: 25px;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+}
+
+.service-item:hover .service-item-icon i {
+  color: #FFFEFE;
+  background-color: #3DFAFF;
+}
+
+.service-item-title h3 {
+  font-size: 1.36em;
+  font-weight: 400;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.service-item-desc p {
+  margin: 0;
+  padding-left: 86px;
+}
+
+/******************************************
+                ABOUT
+******************************************/
+
+.about-bg-diagonal-content {
+  height: 700px;
+  background-image: url('../img/profile1.jpg');
+  border-right: 230px solid white;
+  border-top: 700px solid transparent;
+  background-repeat: no-repeat;
+  background-size: 36vw 78vh;
+  background-position: 15vw 25vh;
+  background-attachment: fixed;
+}
+
+#about-content-box {
+  height: 700px;
+}
+
+#about-content-box-outer {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+#about-content-box-inner {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#about-desc p {
+  margin-bottom: 30px;
+}
+
+/******************************************
+                SKILLS
+******************************************/
+
+/* easypiechart */
+
+.chart {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto 30px auto;
+  position: relative;
+  text-align: center;
+}
+
+.chart span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -30px;
+  width: 100%;
+}
+
+.chart span strong {
+  display: block;
+}
+
+.chart canvas {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+/******************************************
+          PROGRESSBAR (generic)
+******************************************/
+
+.progress-wrap {
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.progress-wrap h3 {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 10px;
+  float: left;
+  width: 100%;
+}
+
+.progress-wrap h3 .name-left {
+  float: left;
+}
+
+.progress-wrap h3 .value-right {
+  float: right;
+}
+
+.progress {
+  width: 100%;
+  float: left;
+  height: 20px;
+  box-shadow: none;
+}
+
+/*progressbar */
+
+.progress-bar.progress-bar-1 {
+  background-color: #3DFAFF !important;
+}
+
+/******************************************
+              MY WORK
+******************************************/
+
+/*end chapter
+
+thanks : */
