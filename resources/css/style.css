@@ -9,7 +9,7 @@
             Baby Blue               : #3DFAFF       (buttons, Icons, Links, Lines, Backgrounds)
             Nero                    : #2A2727       (Headings)
             Mid Grey                : #646b70       (Paragraphs)
-            Black Pearl             : #0d0f14       (TExt With Black Backgrounds)
+            Black Pearl             : #0D0F14       (TExt With Black Backgrounds)
             Snow                    : #FFFEFE
 
 ******************************************/
@@ -322,6 +322,54 @@ h3 {
 /******************************************
               MY WORK
 ******************************************/
+
+.isotope-nav {
+  font-size: 1em;
+  margin-bottom: 30px;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.isotope-nav ul {
+  margin: 24px 0 0 0;
+  font-weight: 500;
+}
+
+.isotope-nav ul li {
+  font-weight: 300;
+  list-style: none;
+  margin: 22px 0 0 0;
+  padding: 0;
+  display: block;
+  cursor: pointer;
+  -webkit-transition: all .5s ease;
+  -moz-bkittransition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.isotope-nav ul li:hover {
+  color: #3DFAFF;
+}
+
+/* main portofolio style */
+
+.isotope-main {
+  float: left;
+  padding-right: 155px;
+}
+
+.isotope-main .item {
+  width: 200px;
+}
+
+.item img {
+  height: 200px;
+}
+
+.active {
+  color: #5274A9;
+}
 
 /*end chapter
 

@@ -35,3 +35,22 @@ $('.chart').easyPieChart({
 /* =========================================
    							WORK
   =======================================*/
+
+  /* Active ISOTOPE */
+
+  $(".isotope-main").isotope( {
+    itemSelector: ".item",
+    layoutMode: "fitRows"
+  });
+
+  /* ISOTOPE Click Function */
+  $(".isotope-nav ul li").click(function() {
+    $('.isotope-nav ul li').removeClass("active");
+    $(this).addClass("active");
+
+    var selector = $(this).attr("data-filter");
+    $(".isotope-main").isotope( {
+      filter: selector
+    });
+    return false;
+  });
